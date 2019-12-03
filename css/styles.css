@@ -35,9 +35,10 @@ html {
 
 .wrapper-layout {
     display: grid;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #F1F1EF;
     grid-template-columns: 0.10fr 0.05fr 0.33fr 0.37fr 0.075fr 0.075fr;
-    grid-template-rows: 1fr 1fr 1fr 5fr 1fr 1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.7fr 5fr 1fr 1fr;
     grid-template-areas:
     "... line-3 ... ... ... ..."
     "line-1 line-4 nav nav logo logo"
@@ -48,7 +49,6 @@ html {
     "line-9 line-11 ... line-12 line-13 ..."
     "line-10 ... footer footer line-14 ...";
 }
-
 .line-1 {
     grid-area: line-1;
     border-right: 3px solid black;
@@ -112,7 +112,6 @@ html {
 /* END --- Website Layout (Design and Grid) */
 
 /* START --- Header elements */
-
 .nav {
     grid-area: nav;
     display: flex;
@@ -140,8 +139,8 @@ li {
 }
 
 header img {
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     border-radius: 50%;
     border: 5px double black;
     
