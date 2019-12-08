@@ -31,123 +31,52 @@ html {
     box-sizing: inherit;
 }
 
-/* START --- Website Layout (Design and Grid) */
+/* START --- Website Layout */
 
-.wrapper-layout {
+.wrapper {
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #F1F1EF;
-    grid-template-columns: 0.10fr 0.05fr 0.33fr 0.37fr 0.075fr 0.075fr;
-    grid-template-rows: 0.7fr 0.7fr 0.7fr 5fr 1fr 1fr;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: auto;
     grid-template-areas:
-    "... line-3 ... ... ... ..."
-    "line-1 line-4 nav nav logo logo"
-    "line-2 line-5 nav nav logo logo"
-
-    "line-6 line-7 main main line-8 ..."
-
-    "line-9 line-11 ... line-12 line-13 ..."
-    "line-10 ... footer footer line-14 ...";
-}
-.line-1 {
-    grid-area: line-1;
-    border-right: 3px solid black;
-}
-.line-2 {
-    grid-area: line-2;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-}
-.line-3 {
-    grid-area: line-3;
-    border-right: 3px solid black;
-}
-.line-4 {
-    grid-area: line-4;
-    border-right: 3px solid black;
-}
-.line-5 {
-    grid-area: line-5;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-}
-.line-6 {
-    grid-area: line-6;
-    border-right: 3px solid black;
-}
-.line-7 {
-    grid-area: line-7;
-    border-right: 3px solid black;
-}
-.line-8 {
-    grid-area: line-8;
-    border-left: 3px solid black;
-}
-.line-9 {
-    grid-area: line-9;
-    border-right: 3px solid black;
-}
-.line-10 {
-    grid-area: line-10;
-    border-right: 3px solid black;
-}
-.line-11 {
-    grid-area: line-11;
-    border-right: 3px solid black;
-}
-.line-12 {
-    grid-area: line-12;
-    border-top: 3px solid black;
-}
-.line-13 {
-    grid-area: line-13;
-    border-top: 3px solid black;
-    border-left: 3px solid black;
-}
-.line-14 {
-    grid-area: line-14;
-    border-left: 3px solid black;
+    "h h h h h h h h h h h h h h h h"
+    "m m m m m m m m m m m m m m m m"
+    "f f f f f f f f f f f f f f f f";
 }
 
-/* END --- Website Layout (Design and Grid) */
+/* END --- Website Layout */
 
 /* START --- Header elements */
-.nav {
-    grid-area: nav;
+header {
+    background-color: #400E00;
+    grid-area: h;
     display: flex;
-    justify-content: space-around;
+    flex-flow: column nowrap;
+    align-items: space-between;
     align-items: center;
-    border-bottom: 3px solid black;
 }
 
-ul {
+.nav ul {
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     list-style-type: none;
-}
-
-li {
     color: cornflowerblue;
 }
-
-.logo {
-    grid-area: logo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-left: 3px solid black;
-    border-bottom: 3px solid black;
+.nav li:not(:last-child)::after {
+	content: " || ";
 }
 
 header img {
     height: 125px;
     width: 125px;
     border-radius: 50%;
-    border: 5px double black;
-    
+    margin: 1rem 3rem;
+    border: 5px double white;
 }
 
 h1 {
-    margin: 0;
+    margin: 0 3rem;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #FFDE4D;
@@ -159,7 +88,8 @@ h1 {
 
 
 main {
-    grid-area: main;
+    grid-area: m;
+    background-color: #F1F1EF;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -169,10 +99,9 @@ main {
 }
 
 main img {
-    grid-area: banner;
     width: 100%;
 }
 
 footer {
-    grid-area: footer;
+    grid-area: f;
 }
