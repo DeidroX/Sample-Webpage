@@ -16,13 +16,21 @@
 
 /* --- FONTS ---
  *
- *
- *
+ *  arimo
+ *  spectral sc
  *
  *
  *
  *
  */
+
+ /* Variables */
+
+ :root {
+
+ }
+
+ /* Change Box Model */
 
 html {
     box-sizing: border-box;
@@ -31,17 +39,44 @@ html {
     box-sizing: inherit;
 }
 
+.nav1 {
+    position: fixed;
+    
+}
+
+.nav1 .logo {
+    background-color: #400E00;
+    width: 200px;
+    opacity: 95%;
+    
+}
+
+.nav1 ul {
+    width: 200px;
+    background-color: #400E00;
+    opacity: 95%;
+    list-style-type: none;
+    color: cornflowerblue;
+    margin: 0;
+    padding: 2rem;
+}
+
+.nav1 .triangle-finish {
+    
+    width: 0;
+    height: 0;
+    opacity: 95%;
+    border-top: 200px solid #400E00;
+    border-right: 200px solid transparent;
+}
+
 /* START --- Website Layout */
 
 .wrapper {
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    "h h h h h h h h h h h h h h h h"
-    "m m m m m m m m m m m m m m m m"
-    "f f f f f f f f f f f f f f f f";
+    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+    
 }
 
 /* END --- Website Layout */
@@ -49,29 +84,49 @@ html {
 /* START --- Header elements */
 header {
     background-color: #400E00;
-    grid-area: h;
     display: flex;
     flex-flow: column nowrap;
-    align-items: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
+.nav {
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+.nav h1 {
+    
+}
 .nav ul {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
     list-style-type: none;
     color: cornflowerblue;
-}
-.nav li:not(:last-child)::after {
-	content: " || ";
+    
 }
 
-header img {
+.nav li {
+    margin: 0 2rem;
+}
+.nav li:not(:last-child)::after {
+	content: "\b7";
+}
+.nav a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.banner img {
+    
+    width: 100%;
+}
+
+.logo img {
+    
     height: 125px;
     width: 125px;
     border-radius: 50%;
-    margin: 1rem 3rem;
+    margin: 1rem 3rem 0 0;
     border: 5px double white;
 }
 
@@ -88,20 +143,14 @@ h1 {
 
 
 main {
-    grid-area: m;
     background-color: #F1F1EF;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas:
-    "banner banner banner banner"
-    "content content content content";
 }
 
-main img {
-    width: 100%;
-}
+
 
 footer {
-    grid-area: f;
+
 }
