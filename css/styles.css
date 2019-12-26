@@ -116,6 +116,12 @@ header {
     color: cornflowerblue;
 }
 
+.banner {
+    
+    width: 100%;
+    /* height */
+}
+
 .banner img {
     
     width: 100%;
