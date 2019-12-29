@@ -40,6 +40,7 @@ html {
 }
 
 .nav {
+    font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     z-index: 1;
 }
@@ -85,14 +86,7 @@ html {
 /* START --- Website Layout */
 
 
-.banner {
-    position: relative;
-    
-    width: 100%;
-    /* height */
-    
 
-}
 
 .wrapper {
     display: grid;
@@ -104,33 +98,21 @@ html {
 /* END --- Website Layout */
 
 /* START --- Header elements */
-header {
-    background-color: #400E00;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-end;
-}
 
 
 
 .banner {
-    position: relative;
-    width: 100%;
     /* height */
+    height: 150px;
 }
+
 
 .banner img {
-    
     width: 100%;
+    
 }
 
-.banner h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
+
 
 
 h1 {
