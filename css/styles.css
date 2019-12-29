@@ -39,19 +39,26 @@ html {
     box-sizing: inherit;
 }
 
-.nav1 {
+.nav {
     position: fixed;
-    
+    z-index: 1;
 }
 
-.nav1 .logo {
+.nav .logo {
     background-color: #400E00;
     width: 200px;
     opacity: 95%;
-    
 }
 
-.nav1 ul {
+.logo img {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    margin: 1rem 3rem 0 0;
+    border: 5px double black;
+}
+
+.nav ul {
     width: 200px;
     background-color: #400E00;
     opacity: 95%;
@@ -61,7 +68,12 @@ html {
     padding: 2rem;
 }
 
-.nav1 .triangle-finish {
+.nav a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.nav .triangle-finish {
     
     width: 0;
     height: 0;
@@ -71,6 +83,16 @@ html {
 }
 
 /* START --- Website Layout */
+
+
+.banner {
+    position: relative;
+    
+    width: 100%;
+    /* height */
+    
+
+}
 
 .wrapper {
     display: grid;
@@ -88,43 +110,13 @@ header {
     flex-flow: column nowrap;
     align-items: flex-end;
 }
-.nav1 {
-    z-index: 2;
-}
 
-.nav {
-    display: flex;
-    flex-flow: row nowrap;
-    
-}
-.nav h1 {
-    
-}
-.nav ul {
-    display: flex;
-    flex-flow: row nowrap;
-    list-style-type: none;
-    color: cornflowerblue;
-    
-}
 
-.nav li {
-    margin: 0 2rem;
-}
-.nav li:not(:last-child)::after {
-	content: "\b7";
-}
-.nav a {
-    text-decoration: none;
-    color: cornflowerblue;
-}
 
 .banner {
     position: relative;
-    
     width: 100%;
     /* height */
-    z-index: 0;
 }
 
 .banner img {
@@ -140,20 +132,12 @@ header {
     text-align: center;
 }
 
-.logo img {
-    
-    height: 125px;
-    width: 125px;
-    border-radius: 50%;
-    margin: 1rem 3rem 0 0;
-    border: 5px double black;
-}
 
 h1 {
     margin: 0 3rem;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #FFDE4D;
+    color: #FFB733;
 }
 
 /* END --- Header elements */
