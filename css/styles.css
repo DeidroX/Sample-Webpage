@@ -113,7 +113,7 @@ nav li:first-child {
 }
 
 nav li {
-    padding: 0.5rem;
+    padding: calc(0.5rem + 0.5vh) 0;
     text-align: center;
     border-bottom: 1px dotted #FFB733;
 }
@@ -150,6 +150,15 @@ header figure {
     margin: 0;
     padding: 0;
     
+}
+
+header h1 {
+    position: absolute;
+    margin: 0 auto;
+    width: 99%;
+    top: 25%;
+    border: 1px solid green;
+    text-align: center;
 }
 
 header figcaption {
