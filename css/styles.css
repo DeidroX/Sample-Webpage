@@ -39,10 +39,27 @@ html {
     box-sizing: inherit;
 }
 
+/* START --- Website Layout */
+
+
+
+
+.wrapper {
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    /*grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(1fr, 2fr) repeat(2, 1fr);
+    
+}
+
+/* END --- Website Layout */
+
 .nav {
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     z-index: 1;
+    
 }
 
 .nav .logo {
@@ -83,33 +100,22 @@ html {
     border-right: 200px solid transparent;
 }
 
-/* START --- Website Layout */
 
-
-
-
-.wrapper {
-    display: grid;
-    font-family: Arial, Helvetica, sans-serif;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
-    
-}
-
-/* END --- Website Layout */
 
 /* START --- Header elements */
 
-
-
-.banner {
-    /* height */
-    height: 150px;
+header {
+    grid-column: 1/5;
+    grid-row: 1/2;
 }
 
 
+
+
 .banner img {
+    display: block;
     width: 100%;
-    
+   
 }
 
 
@@ -128,6 +134,8 @@ h1 {
 
 
 main {
+    grid-column: 1/5;
+    grid-row: 2/3;
     background-color: #F1F1EF;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -137,5 +145,6 @@ main {
 
 
 footer {
-
+    grid-column: 1/5;
+    grid-row: 3/4;
 }
