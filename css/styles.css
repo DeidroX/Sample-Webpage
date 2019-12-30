@@ -144,44 +144,20 @@ nav .triangle-finish {
 header {
     grid-column: 1/5;
     grid-row: 1/2;
-}
-
-header figure {
-    margin: 0;
-    padding: 0;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #FFB733;
     position: absolute;
-    margin: 0 auto;
-    width: 99%;
-    top: 25%;
-    border: 1px solid green;
-    text-align: center;
 }
-
-header figcaption {
-    
-    text-align: center;
-}
-
-
 
 .banner img {
-    display: block;
     width: 100%;
-   
-}
-
-
-
-
-h1 {
-    margin: 0 3rem;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFB733;
 }
 
 /* END --- Header elements */
