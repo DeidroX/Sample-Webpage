@@ -12,11 +12,14 @@
  *  .color4 { background-color: #242424; }
  *  .color5 { background-color: #801C00; }
  *  .color6 { background-color: #400E00; }
+ *  petrol = #005f6A
+ *  khaki = #A18C75
+ *  pistazie = #D3DE99
  */
 
 /* --- FONTS ---
  *
- *  arimo
+ *  raleway
  *  spectral sc
  *
  *
@@ -51,11 +54,16 @@ body {
     width: 99%;
     margin: 0.5% auto;
     display: grid;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     /*grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));*/
     grid-template-columns: repeat(4, minmax(auto, 1fr));
     
     
+}
+
+h1 {
+    font-family: 'Spectral SC', serif;
+    font-size: 75px;
 }
 
 /* END --- Website Layout */
@@ -63,7 +71,6 @@ body {
 
 nav {
     margin-top: -0.5%;
-    font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     z-index: 1;
     display: flex;
@@ -108,14 +115,18 @@ nav .navigation {
 
 }
 
+nav li:nth-child(odd) {
+    background-color: rgb(87, 19, 0);
+}
+
 nav li:first-child {
-    border-top: 1px dotted #FFB733;
+    border-top: 1px solid #213644;
 }
 
 nav li {
-    padding: calc(0.5rem + 0.5vh) 0;
+    padding: calc(0.6rem + 0.5vh) 0;
     text-align: center;
-    border-bottom: 1px dotted #FFB733;
+    border-bottom: 1px solid #213644;
 }
 
 nav li:hover {
@@ -125,7 +136,7 @@ nav li:hover {
 nav a {
     display: block;
     text-decoration: none;
-    color: #16C6CC;
+    color: #D3DE99;
 }
 
 nav .triangle-finish {
@@ -136,8 +147,6 @@ nav .triangle-finish {
     border-top: 12.5vw solid #400E00;
     border-right: 12.5vw solid transparent;
 }
-
-
 
 /* START --- Header elements */
 
@@ -150,9 +159,7 @@ header {
 }
 
 header h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    color: #FFB733;
+    color: #16C6CC;
     position: absolute;
 }
 
@@ -166,12 +173,14 @@ header h1 {
 
 
 main {
+    font-size: 20px;
     grid-column: 1/5;
     grid-row: 2/3;
     background-color: #F1F1EF;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
+
 }
 
 
