@@ -48,56 +48,85 @@ html {
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
     /*grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));*/
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
     grid-template-rows: minmax(1fr, 2fr) repeat(2, 1fr);
     
 }
 
 /* END --- Website Layout */
 
-.nav {
+nav {
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     z-index: 1;
-    
+    display: flex;
+    flex-flow: column nowrap;
+    width: 12.5vw;
 }
 
-.nav .logo {
+nav .logo {
     background-color: #400E00;
-    width: 200px;
+    padding-bottom: 1rem;
     opacity: 95%;
+}
+
+nav figure {
+    margin: 0;
+    padding: 1rem;
+}
+
+nav figcaption {
+    color: #16C6CC;
+    text-align: center;
+    margin-top: 0.5rem;
+    cursor: pointer;
 }
 
 .logo img {
-    height: 125px;
-    width: 125px;
+    width: 100%;
     border-radius: 50%;
-    margin: 1rem 3rem 0 0;
     border: 5px double black;
 }
 
-.nav ul {
-    width: 200px;
+
+
+nav .navigation {
     background-color: #400E00;
     opacity: 95%;
     list-style-type: none;
-    color: cornflowerblue;
     margin: 0;
-    padding: 2rem;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 1 100%;
 }
 
-.nav a {
+nav li:first-child {
+    border-top: 1px solid #FFB733;
+}
+
+nav li {
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid #FFB733;
+}
+
+nav li:hover {
+    background-color: #242424;
+}
+
+nav a {
     text-decoration: none;
-    color: cornflowerblue;
+    color: #16C6CC;
 }
 
-.nav .triangle-finish {
+nav .triangle-finish {
     
     width: 0;
     height: 0;
     opacity: 95%;
-    border-top: 200px solid #400E00;
-    border-right: 200px solid transparent;
+    border-top: 12.5vw solid #400E00;
+    border-right: 12.5vw solid transparent;
 }
 
 
@@ -145,6 +174,9 @@ main {
 
 
 footer {
+    color: #16C6CC;
+    background: #400E00;
+    background-repeat: no-repeat;
     grid-column: 1/5;
     grid-row: 3/4;
 }
