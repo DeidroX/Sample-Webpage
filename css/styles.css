@@ -64,13 +64,14 @@ body {
 h1 {
     font-family: 'Spectral SC', serif;
     font-size: 75px;
+    text-shadow: 4px 2px rgb(9, 86, 88);
 }
 
 /* END --- Website Layout */
 
-
 nav {
     margin-top: -0.5%;
+    margin-left: -0.5%;
     position: fixed;
     z-index: 1;
     display: flex;
@@ -81,7 +82,7 @@ nav {
 nav .logo {
     background-color: #400E00;
     padding-bottom: 1rem;
-    opacity: 95%;
+    opacity: 97.5%;
 }
 
 nav figure {
@@ -102,17 +103,14 @@ nav figcaption {
     border: 5px double black;
 }
 
-
-
 nav .navigation {
     background-color: #400E00;
-    opacity: 95%;
+    opacity: 97.5%;
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-flow: column nowrap;
-
 }
 
 nav li:nth-child(odd) {
@@ -140,10 +138,9 @@ nav a {
 }
 
 nav .triangle-finish {
-    
     width: 0;
     height: 0;
-    opacity: 95%;
+    opacity: 97.5%;
     border-top: 12.5vw solid #400E00;
     border-right: 12.5vw solid transparent;
 }
