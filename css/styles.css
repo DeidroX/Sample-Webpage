@@ -46,7 +46,6 @@ html {
 
 body {
     background-color: #400E00;
-    background-color: yellow;
 }
 
 
@@ -174,10 +173,16 @@ main {
     grid-column: 1/5;
     grid-row: 2/3;
     background-color: #F1F1EF;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 
+}
+
+main article {
+    width: 75%;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid black;
 }
 
 
