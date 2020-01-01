@@ -181,14 +181,41 @@ main {
 
 main article {
     width: 75%;
-    margin-bottom: 2rem;
+    margin: 1rem 0;
 }
 
+
+
+  
 hr {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    outline: none;
+    border: none;
+    color: black;
+    text-align: center;
+    height: 1.5em;
     width: 85%;
-    border: 1px solid black;
+}
+hr::before {
+    content: "";
+    background: linear-gradient(to right, transparent, black, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 0.08rem;
+}
+hr::after {
+    content: attr(data-content);
+    position: relative;
+    color: black;
+    padding: 0 5px;
+    line-height: 1.5em;
+    background-color: #F1F1EF;
 }
 
+  
 
 
 
