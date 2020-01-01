@@ -182,8 +182,17 @@ main {
 main article {
     width: 75%;
     margin-bottom: 2rem;
-    border-bottom: 1px solid black;
 }
+
+hr {
+    width: 85%;
+    border: 1px solid black;
+}
+
+
+
+
+
 
 
 
