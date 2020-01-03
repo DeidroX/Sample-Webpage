@@ -65,6 +65,12 @@ h1 {
     text-shadow: 4px 2px rgb(9, 86, 88);
 }
 
+h2 {
+    font-family: 'Spectral SC', serif;
+    font-size: 55px;
+    text-shadow: 2px 1px rgb(61, 61, 61);
+}
+
 /* END --- Website Layout */
 
 nav {
@@ -182,7 +188,30 @@ main {
 main article {
     width: 75%;
     margin: 1rem 0;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
+
+main article img {
+    width: 50%;
+}
+
+main .article-headline {
+    
+}
+
+main .author-date {
+    
+}
+
+main article .news {
+    width: 50%;
+}
+
+
 
 
 
