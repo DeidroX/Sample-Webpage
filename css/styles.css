@@ -102,13 +102,17 @@ nav figcaption {
     color: white;
     text-align: center;
     margin-top: 0.5rem;
+}
+
+nav figcaption:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .logo img {
     width: 100%;
     border-radius: 50%;
-    border: 5px double black;
+    border: 1px solid black;
 }
 
 nav .navigation {
@@ -130,19 +134,20 @@ nav li:first-child {
 }
 
 nav li {
-    padding: calc(0.6rem + 0.5vh) 0;
-    text-align: center;
     border-bottom: 1px solid #213644;
-}
-
-nav li:hover {
-    background-color: #242424;
 }
 
 nav a {
     display: block;
+    text-align: center;
+    padding: calc(0.6rem + 0.5vh) 0;
     text-decoration: none;
     color: #D3DE99;
+}
+
+nav a:hover {
+    background-color: #242424;
+    text-decoration: underline;
 }
 
 nav .triangle-finish {
