@@ -42,12 +42,11 @@ html {
     box-sizing: inherit;
 }
 
-/* START --- Website Layout */
+/* START    --- Website Layout */
 
 body {
     background-color: #400E00;
 }
-
 
 .wrapper {
     width: 99%;
@@ -86,7 +85,8 @@ h2 {
     text-shadow: 2px 1px rgb(61, 61, 61);
 }
 
-/* END --- Website Layout */
+/* END      --- Website Layout */
+/* START    --- Navigation */
 
 nav {
     margin-top: -0.5%;
@@ -169,7 +169,8 @@ nav .triangle-finish {
     border-right: 12.5vw solid transparent;
 }
 
-/* START --- Header elements */
+/* END      --- Navigation */
+/* START    --- Header */
 
 header {
     grid-column: 1/5;
@@ -188,13 +189,10 @@ header h1 {
     width: 100%;
 }
 
-/* END --- Header elements */
-
-
-
+/* END      --- Header */
+/* START    --- Main */
 
 main {
-
     grid-column: 1/5;
     grid-row: 2/3;
     background-color: #F1F1EF;
@@ -214,6 +212,7 @@ main article {
     border: 1px solid black;
 }
 
+/* START    --- Article headline */
 
 main .news-heading {
     display: flex;
@@ -240,7 +239,8 @@ main .news-heading a:hover {
     cursor: pointer;
 }
 
-
+/* END      --- Article headline */
+/* START    --- Article text */
 
 main .news {
     border: 1px solid black;
@@ -258,10 +258,8 @@ main .news img {
 
 
 
-
-
-
-
+/* END      --- Article text */
+/* START    --- Seperation of articles */
   
 hr {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -291,13 +289,9 @@ hr::after {
     background-color: #F1F1EF;
 }
 
-  
-
-
-
-
-
-
+/* END      --- Seperation of articles */
+/* END      --- Main */
+/* START    --- Footer */
 
 footer {
     color: white;
@@ -311,8 +305,6 @@ footer {
     align-items: center;
 }
 
-
-
 footer .footer {
     flex-basis: 75%;
     border: 1px yellow solid;
@@ -322,3 +314,5 @@ footer .legal {
     flex-basis: 20%;
     border: 1px blue solid;
 }
+
+/* END      --- Footer */
