@@ -253,6 +253,7 @@ main .news {
 
 main .news img {
     width: 40%;
+    filter: contrast(125%);
 }
 
 main .news p {
