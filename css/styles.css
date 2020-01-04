@@ -210,6 +210,16 @@ main .news-heading {
     align-items: center;
 }
 
+main .news-heading a {
+    color: #005f6A;
+    text-decoration: underline;
+}
+
+main .news-heading a:hover {
+    color: black;
+    cursor: pointer;
+}
+
 main .news {
     width: 50%;
     display: flex;
