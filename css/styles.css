@@ -50,7 +50,6 @@ body {
 
 
 .wrapper {
-    
     width: 99%;
     margin: 0.5% auto;
     display: grid;
@@ -59,6 +58,17 @@ body {
     grid-template-columns: repeat(4, minmax(auto, 1fr));
 }
 
+/* Navigation and text under pictures */
+figcaption, a {
+    font-size: 16px;
+}
+
+/* Normal textsize */
+p, span, i, main a {
+    font-size: 20px;
+}
+
+/* Big headline */
 h1 {
     font-family: 'Spectral SC', serif;
     font-size: 65px;
@@ -69,6 +79,7 @@ h1 {
     padding: 0.5rem;
 }
 
+/* Article headlines */
 h2 {
     font-family: 'Spectral SC', serif;
     font-size: 45px;
@@ -183,24 +194,24 @@ header h1 {
 
 
 main {
-    font-size: 20px;
+
     grid-column: 1/5;
     grid-row: 2/3;
     background-color: #F1F1EF;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-
+    justify-content: center;
 }
 
 main article {
     width: 75%;
     margin: 1rem 0;
-    
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 
 
@@ -208,11 +219,20 @@ main .news-heading {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+main .article-headline,
+main .author-date {
+    margin: 0;
+    text-align: center;
 }
 
 main .news-heading a {
-    color: #005f6A;
+    color: #FB6C3B;
     text-decoration: underline;
+    margin-right: 1.5rem;
 }
 
 main .news-heading a:hover {
@@ -220,11 +240,16 @@ main .news-heading a:hover {
     cursor: pointer;
 }
 
+
+
 main .news {
-    width: 50%;
+    border: 1px solid black;
+    width: 75%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
 }
 
 main .news img {
