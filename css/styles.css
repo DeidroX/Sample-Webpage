@@ -63,7 +63,7 @@ figcaption, a {
 }
 
 /* Normal textsize */
-p, span, i, main a {
+p, span, i, main a, hr {
     font-size: 20px;
 }
 
