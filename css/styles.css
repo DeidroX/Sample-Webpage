@@ -101,7 +101,7 @@ nav {
 nav .logo {
     background-color: #400E00;
     padding-bottom: 1rem;
-    opacity: 97.5%;
+    opacity: 97%;
 }
 
 nav figure {
@@ -209,7 +209,6 @@ main article {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 
 /* START    --- Article headline */
@@ -243,20 +242,26 @@ main .news-heading a:hover {
 /* START    --- Article text */
 
 main .news {
-    border: 1px solid black;
-    width: 75%;
+
+    
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: center;
+    
     margin: 1rem 0;
 }
 
 main .news img {
-    width: 100%;
+    flex: 0 0 40%;
+    border: 1px solid black;
 }
 
-
+main .news p {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    flex: 0 0 55%;
+}
 
 /* END      --- Article text */
 /* START    --- Seperation of articles */
