@@ -29,8 +29,15 @@
 
  /* Variables */
 
+ /* Font size (Type scale) */
  :root {
-
+    --base-size: 1rem;
+    --type-scale: 1.25;
+    --h3: calc(var(--base-size) * var(--type-scale));
+    --h2: calc(var(--h3) * var(--type-scale));
+    --h1: calc(var(--h2) * var(--type-scale));
+    --text-sm: calc(var(--base-size) / var(--type-scale));
+    --header-margin: 0 0 1rem 2rem;
  }
 
  /* Change Box Model */
@@ -247,7 +254,8 @@ main .news {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    
+    align-items: flex-start;
+    text-align: justify;
     margin: 1rem 0;
 }
 
@@ -256,7 +264,6 @@ main .news img {
 }
 
 main .news p {
-    border: 1px solid black;
     margin: 0;
     padding: 0;
     width: 55%;
