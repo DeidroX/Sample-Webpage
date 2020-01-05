@@ -30,15 +30,14 @@
  /* Variables */
 
  /* Font size (Type scale) */
- :root {
+:root {
     --base-size: 1rem;
     --type-scale: 1.25;
-    --h3: calc(var(--base-size) * var(--type-scale));
-    --h2: calc(var(--h3) * var(--type-scale));
+    --text: calc(var(--base-size) * var(--type-scale));
+    --links-figcaption: calc(var(--h3) * var(--type-scale));
     --h1: calc(var(--h2) * var(--type-scale));
-    --text-sm: calc(var(--base-size) / var(--type-scale));
-    --header-margin: 0 0 1rem 2rem;
- }
+    --h2: calc(var(--base-size) / var(--type-scale));
+}
 
  /* Change Box Model */
 
