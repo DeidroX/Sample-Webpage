@@ -29,14 +29,31 @@
 
  /* Variables */
 
- /* Font size (Type scale) */
+ /* Font size (Type scale) starting on phones in portrait mode */
 :root {
     --base-size: 1rem;
-    --type-scale: 1.25;
+    --type-scale: 1.35;
+    --links-figcaption: var(--base-size);
     --text: calc(var(--links-figcaption) * var(--type-scale));
-    --links-figcaption: calc(var(--base-size) * var(--type-scale));
+    --h5: calc(var(--text) * var(--type-scale));
+    --h4: calc(var(--h5) * var(--type-scale));
+    --h3: calc(var(--h4) * var(--type-scale));
+    --h2: calc(var(--h3) * var(--type-scale));
     --h1: calc(var(--h2) * var(--type-scale));
-    --h2: calc(var(--base-size) / var(--type-scale));
+}
+
+/* Phones in landscape mode and tablets */
+@media (min-width: 576px) {
+    :root {
+        --type-scale: 1.30;
+    }
+}
+
+/* Desktop size */
+@media (min-width: 992px) {
+    :root {
+        --type-scale: 1.25;
+    }
 }
 
  /* Change Box Model */
@@ -65,38 +82,38 @@ body {
 
 /* Navigation and text under pictures */
 figcaption, a {
-    font-size: 16px;
+    font-size: var(--links-figcaption);
 }
 
 /* Normal textsize */
-p, i, main a, hr {
-    font-size: 20px;
+p, span, i, main a, hr {
+    font-size: var(--text);
 }
 
 /* Big headline */
 h1 {
     font-family: 'Spectral SC', serif;
-    font-size: 65px;
+    font-size: var(--h1);
     text-shadow: 4px 2px rgba(255, 255, 255, 0.300);
     color: white;
     border: 5px solid white;
     box-shadow: 4px 2px rgba(255, 255, 255, 0.300);
-    padding: 0.5rem 0 0.5rem 0.5rem;
-    
+    padding: 0.6rem 0 0.6rem 0.6rem;
 }
 
 h1 span {
     color: #342B2C;
+    font-size: var(--h1);
     text-shadow: 4px 2px rgba(52, 43, 44, 0.500);
     background-color: white;
-    padding-right: 0.5rem;
+    padding-right: 0.6rem;
     margin-left: 5px;
 }
 
 /* Article headlines */
 h2 {
     font-family: 'Spectral SC', serif;
-    font-size: 45px;
+    font-size: var(--h2);
     text-shadow: 2px 1px rgb(61, 61, 61);
 }
 
