@@ -279,23 +279,28 @@ main .news a:hover {
 /* START    --- Article text */
 
 main .news {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    text-align: justify;
     margin: 1rem 0;
 }
 
 main .news img {
     width: 40%;
+    min-width: 400px;
+    float: left;
+    margin-right: 2%;
+}
+
+main .news img::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 main .news p {
+    text-align: justify;
     margin: 0;
     padding: 0;
-    width: 50%;
 }
+
 
 /* END      --- Article text */
 /* START    --- Seperation of articles */
