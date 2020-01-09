@@ -1,33 +1,4 @@
-/* --- COLORTABLE ---
- *  Text:
- *  #574A44 (Blackish)
- *  #F3F3F3 (Whiteish)
- *  #FFDE4D (Yellowish)
- *  cornflowerblue (Blueish)
- *
- *  Background Colors (Layout) :
- *  .color1 { background-color: #EEEEEE; }
- *  .color2 { background-color: white; }
- *  .color3 { background-color: black; }
- *  .color4 { background-color: #242424; }
- *  .color5 { background-color: #801C00; }
- *  .color6 { background-color: #400E00; }
- *  petrol = #005f6A
- *  khaki = #A18C75
- *  pistazie = #D3DE99
- */
-
-/* --- FONTS ---
- *
- *  raleway
- *  spectral sc
- *
- *
- *
- *
- */
-
- /* Variables */
+/* Variables */
 
  /* Font size (Type scale) starting on phones in portrait mode */
 :root {
