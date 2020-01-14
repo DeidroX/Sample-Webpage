@@ -288,6 +288,10 @@ main .news p {
     padding: 0;
 }
 
+main .news p span {
+    font-weight: bold;
+}
+
 /* END      --- Article text */
 /* START    --- Seperation of articles */
   
