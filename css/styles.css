@@ -59,6 +59,7 @@ figcaption, a {
 /* Normal textsize */
 p, span, i, main a, hr {
     font-size: var(--text);
+    line-height: 1.2;
 }
 
 /* Big headline */
@@ -79,6 +80,7 @@ h1 span {
     background-color: white;
     padding-right: 0.6rem;
     margin-left: 5px;
+    line-height: 1;
 }
 
 /* Article headlines */
