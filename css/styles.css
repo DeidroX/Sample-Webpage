@@ -117,26 +117,27 @@ nav {
     width: 12.5vw;
 }
 
+nav .hide-menu {
+    background-color: #400E00;
+    opacity: 97%;
+    text-align: right;
+}
+
+nav .hide-menu i {
+    padding: 0.5rem 1rem 0 0;
+    color: white;
+    font-size: var(--h3);
+}
+
+nav .hide-menu i:hover {
+    cursor: pointer;
+}
+
 nav .logo {
     background-color: #400E00;
-    padding-bottom: 1rem;
     opacity: 97%;
-}
-
-nav figure {
     margin: 0;
-    padding: 1rem;
-}
-
-nav figcaption {
-    color: white;
-    text-align: center;
-    margin-top: 0.5rem;
-}
-
-nav figcaption:hover {
-    cursor: pointer;
-    text-decoration: underline;
+    padding: 0.5rem 1rem;
 }
 
 .logo img {
