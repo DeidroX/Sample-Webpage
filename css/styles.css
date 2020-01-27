@@ -117,13 +117,13 @@ nav {
     width: 12.5vw;
 }
 
-nav .hide-menu {
+nav .hide-nav-button {
     background-color: #400E00;
     opacity: 97%;
     text-align: right;
 }
 
-nav .hide-menu button {
+nav .hide-nav-button button {
     padding: 0;
     color: white;
     font-size: var(--h3);
@@ -132,7 +132,7 @@ nav .hide-menu button {
     border: 0;
 }
 
-nav .hide-menu button:hover {
+nav .hide-nav-button button:hover {
     cursor: pointer;
 }
 
@@ -191,6 +191,27 @@ nav .triangle-finish {
     opacity: 97.5%;
     border-top: 12.5vw solid #400E00;
     border-right: 12.5vw solid transparent;
+}
+
+#show-nav {
+    margin-top: -0.5%;
+    margin-left: -0.5%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 12.5vw;
+}
+
+#show-nav img {
+    width: 75%;
+    border-radius: 50%;
+    margin: 1rem;
+    border: 5px solid black;
+}
+
+#show-nav img:hover {
+    cursor: pointer;
 }
 
 /* END      --- Navigation */

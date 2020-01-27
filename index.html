@@ -17,9 +17,9 @@
     <!-- Grid with 4 columns -->
     <div class="wrapper">
 
-        <nav>
-            <div class="hide-menu">
-                <button aria-label="Hide Navigation Menu" class="fas fa-times closebtn" onclick="closeNav()"></button>
+        <nav id="hide-nav">
+            <div class="hide-nav-button">
+                <button aria-label="Hide Navigation Menu" class="fas fa-times" onclick="closeNav()"></button>
             </div>
             <div class="logo">
                 <picture>
@@ -37,6 +37,13 @@
             </ul>
             <div class="triangle-finish"></div>
         </nav>
+
+        <div id="show-nav" style="display: none;">
+            <picture>
+                <source srcset="./images/logo/logo_desktop.png" media="(min-width: 992px)">
+                <img aria-label="Open Navigation Menu if it is hidden" onclick="openNav()" src="./images/logo/logo_other.png" alt="Homepage Logo Nino Righi" title="Logo">
+            </picture>
+        </div>
 
 
         <header>
@@ -111,5 +118,6 @@
     </div> <!-- end wrapper -->
     <!-- Javascript files -->
     <script src="./js/bubbles.js"></script>
+    <script src="./js/navigation.js"></script>
 </body>
 </html>
