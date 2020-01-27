@@ -123,13 +123,16 @@ nav .hide-menu {
     text-align: right;
 }
 
-nav .hide-menu i {
-    padding: 0.5rem 1rem 0 0;
+nav .hide-menu button {
+    padding: 0;
     color: white;
     font-size: var(--h3);
+    margin: 0.5rem 1rem 0 0;
+    background: 0;
+    border: 0;
 }
 
-nav .hide-menu i:hover {
+nav .hide-menu button:hover {
     cursor: pointer;
 }
 
