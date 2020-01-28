@@ -115,6 +115,7 @@ nav {
     display: flex;
     flex-flow: column nowrap;
     width: 12.5vw;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 nav .hide-nav-button {
@@ -201,6 +202,7 @@ nav .triangle-finish {
     display: flex;
     flex-flow: column nowrap;
     width: 12.5vw;
+    transition: 0.5s;
 }
 
 #show-nav img {
@@ -375,7 +377,7 @@ footer {
     grid-row: 3/4;
     display: flex;
     flex-flow: column nowrap;
-    align-items: flex-end;
+    align-items: center;
     padding: 1rem 0;
 }
 
