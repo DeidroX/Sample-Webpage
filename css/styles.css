@@ -108,14 +108,17 @@ h4 {
 /* START    --- Navigation */
 
 nav {
-    margin-top: -0.5%;
-    margin-left: -0.5%;
     position: fixed;
     z-index: 1;
     display: flex;
     flex-flow: column nowrap;
     width: 12.5vw;
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: .5s;
+    left: 0;
+    top: 0;
+    opacity: 100%;
+    visibility: visible;
+    transition: 0.5s;
 }
 
 nav .hide-nav-button {
@@ -152,7 +155,7 @@ nav .logo {
 
 nav .navigation {
     background-color: #400E00;
-    opacity: 97.5%;
+    opacity: 97%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -189,23 +192,25 @@ nav a:hover {
 nav .triangle-finish {
     width: 0;
     height: 0;
-    opacity: 97.5%;
+    opacity: 97%;
     border-top: 12.5vw solid #400E00;
     border-right: 12.5vw solid transparent;
 }
 
 #show-nav {
-    margin-top: -0.5%;
-    margin-left: -0.5%;
     position: fixed;
     z-index: 1;
-    display: flex;
-    flex-flow: column nowrap;
+    display: block;
+    opacity: 0;
     width: 12.5vw;
+    left: -250px;
+    top: -250px;
+    visibility: hidden;
     transition: 0.5s;
 }
 
 #show-nav img {
+    opacity: 97%;
     width: 75%;
     border-radius: 50%;
     margin: 1rem;
