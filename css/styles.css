@@ -43,8 +43,6 @@ body {
 }
 
 .wrapper {
-    width: 99%;
-    margin: 0.5% auto;
     display: grid;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     /*grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));*/
@@ -255,7 +253,7 @@ main {
 }
 
 main article {
-    width: 75%;
+    width: 74%;
     margin: 1rem 0;
     display: flex;
     flex-flow: column nowrap;
@@ -395,7 +393,7 @@ footer .footer-wrapper {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    width: 85%;
+    width: 80%;
 }
 
 footer .copyright {
