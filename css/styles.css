@@ -38,15 +38,21 @@ html {
 
 /* START    --- Website Layout */
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: #400E00;
 }
 
 .wrapper {
+    height: 100%;
     display: grid;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     /*grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));*/
     grid-template-columns: repeat(4, minmax(auto, 1fr));
+    display: block;
 }
 
 /* Navigation and text under pictures */
@@ -103,6 +109,27 @@ h4 {
 }
 
 /* END      --- Website Layout */
+/* START    --- Parallax Scrolling Picture Elements */
+
+.parallax {
+
+    height: 75%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-1 {
+    background-image: url("../images/main/banner_1.jpg");
+}
+
+.parallax-2 {
+    background-image: url("../images/main/banner_2.png");
+}
+
+
+/* END      --- Parallax Scrolling Picture Elements */
 /* START    --- Navigation */
 
 nav {
