@@ -117,15 +117,19 @@ h4 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% cover;
 }
 
 .parallax-1 {
-    background-image: url("../images/main/banner_1.jpg");
+    background-image: url("../images/main/Canva\ -\ Apple\ Macbook\(1\).jpg");
 }
 
 .parallax-2 {
-    background-image: url("../images/main/banner_2.png");
+    background-image: url("../images/main/Canva\ -\ Computer\ Keyboard\(1\).jpg");
+}
+
+.parallax-3 {
+    background-image: url("../images/main/Canva\ -\ Information\ Sign\ on\ Shelf\(1\).jpg");
 }
 
 
