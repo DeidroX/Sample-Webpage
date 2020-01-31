@@ -13,10 +13,16 @@
     --h1: calc(var(--h2) * var(--type-scale));
 }
 
+/* TODO: Mobile first - put Media queries AFTER mobile */
 /* Phones in landscape mode and tablets */
 @media (min-width: 576px) {
     :root {
         --type-scale: 1.30;
+    }
+
+    /* Disable parallax scrolling */
+    .parallax {
+        background-attachment: scroll;
     }
 }
 
@@ -24,6 +30,11 @@
 @media (min-width: 992px) {
     :root {
         --type-scale: 1.25;
+    }
+
+    /* Disable parallax scrolling */
+    .parallax {
+        background-attachment: scroll;
     }
 }
 
@@ -43,7 +54,7 @@ html, body {
 }
 
 body {
-    background-color: #400E00;
+    background-color: #F1F1EF;
 }
 
 .wrapper {
@@ -112,7 +123,6 @@ h4 {
 /* START    --- Parallax Scrolling Picture Elements */
 
 .parallax {
-    height: 75%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,14 +131,17 @@ h4 {
 
 .parallax-1 {
     background-image: url("../images/main/Canva\ -\ Apple\ Macbook\(1\).jpg");
+    height: 100%;
 }
 
 .parallax-2 {
-    background-image: url("../images/main/Canva\ -\ Computer\ Keyboard\(1\).jpg");
+    background-image: url("../images/main/Canva\ -\ Turned-on\ Computer\ Monitor\ Displaying\ Text\(1\).jpg");
+    height: 70%;
 }
 
 .parallax-3 {
-    background-image: url("../images/main/Canva\ -\ Information\ Sign\ on\ Shelf\(1\).jpg");
+    background-image: url("../images/main/Canva\ -\ Computer\ Keyboard\(1\).jpg");
+    height: 100%;
 }
 
 /* END      --- Parallax Scrolling Picture Elements */
@@ -174,10 +187,19 @@ nav .logo {
     padding: 0.5rem 1rem;
 }
 
+.logo {
+    z-index: 100;
+}
+
 .logo img {
     width: 100%;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 3px solid black;
+}
+
+.logo img:hover {
+    cursor: grab;
+    cursor: -webkit-grab;
 }
 
 nav .navigation {
@@ -241,7 +263,7 @@ nav .triangle-finish {
     width: 75%;
     border-radius: 50%;
     margin: 1rem;
-    border: 5px solid black;
+    border: 3px solid black;
 }
 
 #show-nav img:hover {
