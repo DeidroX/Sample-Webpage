@@ -112,12 +112,11 @@ h4 {
 /* START    --- Parallax Scrolling Picture Elements */
 
 .parallax {
-
     height: 75%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% cover;
+    background-size: cover;
 }
 
 .parallax-1 {
@@ -131,7 +130,6 @@ h4 {
 .parallax-3 {
     background-image: url("../images/main/Canva\ -\ Information\ Sign\ on\ Shelf\(1\).jpg");
 }
-
 
 /* END      --- Parallax Scrolling Picture Elements */
 /* START    --- Navigation */
