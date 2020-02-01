@@ -130,8 +130,9 @@ h4 {
 }
 
 .parallax-1 {
-    background-image: url("../images/main/Canva\ -\ Apple\ Macbook\(1\).jpg");
+    background-image: url("../images/main/banner_1.jpg");
     height: 100%;
+    position: relative;
 }
 
 .parallax-2 {
