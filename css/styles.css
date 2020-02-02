@@ -130,9 +130,18 @@ h4 {
 }
 
 .parallax-1 {
+    /*
     background-image: url("../images/main/banner_1.jpg");
-    height: 100%;
+    */
     position: relative;
+    overflow: hidden;
+    background: black;
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 100%;
+    width: 100%;
+    display: block;
 }
 
 .parallax-2 {
