@@ -8,15 +8,15 @@ let canvas = document.querySelector(".parallax-1"),
 	particles = [];
 
 const Tau = Math.PI * 2,
-	  ConnectionDist = 100, 
-	  maxParticles = 100, 
+	  ConnectionDist = 150, 
+	  maxParticles = 75, 
 	  radius = 3,
       Msqrt = Math.sqrt,
       Mrandom = Math.random;
 
 function handleResize(){
 	w = ctx.canvas.width = window.innerWidth;
-	h = ctx.canvas.height = window.innerHeight;
+	h = ctx.canvas.height = window.innerHeight / 2;
 	midX = w * .5;
 }
 window.onresize = () => handleResize();
