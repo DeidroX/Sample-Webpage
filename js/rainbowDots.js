@@ -1,6 +1,6 @@
 /* Code from Nick Watton, forked on codepen */
 
-let canvas = document.querySelector(".parallax-1"),
+let canvas = document.querySelector(".banner"),
     ctx = canvas.getContext("2d"),
 	w,
 	midX,
