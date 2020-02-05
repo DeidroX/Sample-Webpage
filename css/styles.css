@@ -155,10 +155,10 @@ nav {
     flex-flow: column nowrap;
     width: 12.5vw;
     transition: .5s;
-    left: 0;
-    top: 0;
-    opacity: 100%;
-    visibility: visible;
+    left: -250px;
+    top: -250px;
+    opacity: 0;
+    visibility: hidden;
     transition: 0.5s;
 }
 
@@ -250,12 +250,12 @@ nav .triangle-finish {
 #show-nav {
     position: fixed;
     z-index: 1;
-    display: block;
-    opacity: 0;
+    display: flex;
+    opacity: 100%;
     width: 12.5vw;
-    left: -250px;
-    top: -250px;
-    visibility: hidden;
+    left: 0;
+    top: 0;
+    visibility: visible;
     transition: 0.5s;
 }
 
@@ -269,6 +269,11 @@ nav .triangle-finish {
 
 #show-nav img:hover {
     cursor: pointer;
+}
+
+#show-nav .fa-long-arrow-alt-left {
+    color: white;
+    font-size: 99px;
 }
 
 /* END      --- Navigation */
