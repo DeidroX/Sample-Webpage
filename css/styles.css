@@ -257,6 +257,8 @@ nav .triangle-finish {
     top: 0;
     visibility: visible;
     transition: 0.5s;
+
+    border: 2px solid blue;
 }
 
 #show-nav img {
@@ -274,6 +276,7 @@ nav .triangle-finish {
 #show-nav .fa-long-arrow-alt-left {
     color: white;
     font-size: 99px;
+    visibility: hidden;
 }
 
 /* END      --- Navigation */
