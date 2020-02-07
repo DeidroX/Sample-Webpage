@@ -16,17 +16,17 @@ function closeNav() {
         "opacity: 100%; left: 0; top: 0; visibility: visible;");
 } 
 
-/* Slide in Info Arrow after 2.5 seconds */
+/* Slide in Info Arrow after 2 seconds */
 
 const arrow = document.querySelector(".fa-long-arrow-alt-left");
 
 setTimeout(() => {
     arrow.classList.add('animation-target');
     arrow.style.visibility = "visible";
-}, 2500);
 
-/* After another 2.5 seconds fade out (duration 2.5 seconds) */
-/* TODO */
-setTimeout(() => {
-    arrow.style.visibility = "visible";
-}, 2500);
+    /* After another 2 seconds fade out (duration 2 seconds) */
+    /* TODO */
+    setTimeout(() => {
+        arrow.style.display = "none";
+    }, 2000);
+}, 2000);

@@ -251,21 +251,25 @@ nav .triangle-finish {
     position: fixed;
     z-index: 1;
     display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
     opacity: 100%;
-    width: 12.5vw;
+    width: 30%;
     left: 0;
     top: 0;
     visibility: visible;
     transition: 0.5s;
+}
 
-    border: 2px solid blue;
+#show-nav picture {
+    width: 45%;
 }
 
 #show-nav img {
     opacity: 97%;
     width: 75%;
     border-radius: 50%;
-    margin: 1rem;
+    margin: 2vh 1vw;
     border: 3px solid black;
 }
 
@@ -273,10 +277,25 @@ nav .triangle-finish {
     cursor: pointer;
 }
 
+#show-nav .info-arrow {
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
 #show-nav .fa-long-arrow-alt-left {
     color: white;
-    font-size: 99px;
+    font-size: 7vw;
     visibility: hidden;
+    margin-right: 1rem;
+}
+
+#show-nav .info-arrow p {
+    color: white;
+    font-weight: bold;
+    font-size: 3vw;
+    text-align: center;
 }
 
 /* END      --- Navigation */
