@@ -163,7 +163,6 @@ nav {
 
 nav .hide-nav-button {
     background-image: linear-gradient(to right, black, silver);
-    border-right: 1px solid #213644;
     opacity: 97%;
     text-align: right;
 }
@@ -183,7 +182,6 @@ nav .hide-nav-button button:hover {
 
 nav .logo {
     background-image: linear-gradient(to right, black, silver);
-    border-right: 1px solid #213644;
     opacity: 97%;
     margin: 0;
     padding: 0.5rem 1rem;
@@ -206,7 +204,6 @@ nav .logo {
 
 nav .navigation {
     background-image: linear-gradient(to right, black, silver);
-    border-right: 1px solid #213644;
     opacity: 97%;
     list-style-type: none;
     margin: 0;
@@ -236,9 +233,9 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #242424;
     text-decoration: underline;
     cursor: pointer;
+    border-left: 5px solid #D6BB05;
 }
 
 nav .triangle-finish {
@@ -296,8 +293,8 @@ nav .triangle-finish {
     margin-right: 1rem;
 }
 
-#show-nav .info-arrow p {
-    visibility: hidden;
+#show-nav .info-arrow .arrow-message {
+    /* visibility: hidden; */
     color: white;
     font-weight: bold;
     font-size: 3vw;
