@@ -242,11 +242,14 @@ nav a:hover {
 }
 
 nav .triangle-finish {
-    width: 0;
-    height: 0;
+    width: 12.5vw;
+    height: 12.5vw;
     opacity: 97%;
+    background-image: linear-gradient(135deg, black 10%, silver 50%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 100%);
+    /*
     border-top: 12.5vw solid black;
     border-right: 12.5vw solid transparent;
+    */
 }
 
 #show-nav {
