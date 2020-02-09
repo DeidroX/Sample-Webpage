@@ -130,17 +130,17 @@ h4 {
 }
 
 .parallax-1 {
-    background-image: url("../images/parallax1.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/parallax1.png");
     height: 100%;
 }
 
 .parallax-2 {
-    background-image: url("../images/parallax2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/parallax2.jpg");
     height: 70%;
 }
 
 .parallax-3 {
-    background-image: url("../images/parallax3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/parallax3.jpg");
     height: 100%;
 }
 
@@ -295,7 +295,7 @@ nav .triangle-finish {
 }
 
 #show-nav .info-arrow .arrow-message {
-    opacity: 0;
+    opacity: 0%;
     color: white;
     font-weight: bold;
     font-size: 3vw;
