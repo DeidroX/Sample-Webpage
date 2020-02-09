@@ -16,17 +16,20 @@ function closeNav() {
         "opacity: 100%; left: 0; top: 0; visibility: visible;");
 } 
 
-/* Slide in Info Arrow after 2 seconds */
+/* Slide in Info Arrow and show message */
 
 const arrow = document.querySelector(".fa-long-arrow-alt-left");
+const arrowMessage = document.querySelector(".arrow-message");
 
 setTimeout(() => {
     arrow.classList.add('animation-target');
     arrow.style.visibility = "visible";
-
-    /* After another 2 seconds fade out (duration 2 seconds) */
-    /* TODO */
+    arrowMessage.style.visibility = "visible";
+    arrowMessage.style.opacity = "100%";
     setTimeout(() => {
-        arrow.style.display = "none";
-    }, 2000);
+        arrow.style.opacity = "0";
+        arrowMessage.style.opacity = "0";
+        arrow.style.visibility = "hidden";
+        arrowMessage.style.visibility = "hidden";
+    }, 6000);
 }, 2000);
