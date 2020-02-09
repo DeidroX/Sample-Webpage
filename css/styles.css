@@ -162,7 +162,8 @@ nav {
 }
 
 nav .hide-nav-button {
-    background-color: #400E00;
+    background-image: linear-gradient(to right, black, silver);
+    border-right: 1px solid #213644;
     opacity: 97%;
     text-align: right;
 }
@@ -181,7 +182,8 @@ nav .hide-nav-button button:hover {
 }
 
 nav .logo {
-    background-color: #400E00;
+    background-image: linear-gradient(to right, black, silver);
+    border-right: 1px solid #213644;
     opacity: 97%;
     margin: 0;
     padding: 0.5rem 1rem;
@@ -194,7 +196,7 @@ nav .logo {
 .logo img {
     width: 100%;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 2px solid black;
 }
 
 .logo img:hover {
@@ -203,7 +205,8 @@ nav .logo {
 }
 
 nav .navigation {
-    background-color: #400E00;
+    background-image: linear-gradient(to right, black, silver);
+    border-right: 1px solid #213644;
     opacity: 97%;
     list-style-type: none;
     margin: 0;
@@ -213,7 +216,7 @@ nav .navigation {
 }
 
 nav li:nth-child(odd) {
-    background-color: rgb(87, 19, 0);
+    background-image: linear-gradient(to right, black, rgb(212, 212, 212));
 }
 
 nav li:first-child {
@@ -229,7 +232,7 @@ nav a {
     text-align: center;
     padding: calc(0.6rem + 0.5vh) 0;
     text-decoration: none;
-    color: #D3DE99;
+    color: white;
 }
 
 nav a:hover {
@@ -242,7 +245,7 @@ nav .triangle-finish {
     width: 0;
     height: 0;
     opacity: 97%;
-    border-top: 12.5vw solid #400E00;
+    border-top: 12.5vw solid black;
     border-right: 12.5vw solid transparent;
 }
 
