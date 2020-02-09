@@ -130,17 +130,17 @@ h4 {
 }
 
 .parallax-1 {
-    background-image: url("../images/main/Canva\ -\ Apple\ Macbook\(1\).jpg");
+    background-image: url("../images/parallax1.png");
     height: 100%;
 }
 
 .parallax-2 {
-    background-image: url("../images/main/Canva\ -\ Turned-on\ Computer\ Monitor\ Displaying\ Text\(1\).jpg");
+    background-image: url("../images/parallax2.jpg");
     height: 70%;
 }
 
 .parallax-3 {
-    background-image: url("../images/main/Canva\ -\ Computer\ Keyboard\(1\).jpg");
+    background-image: url("../images/parallax3.jpg");
     height: 100%;
 }
 
