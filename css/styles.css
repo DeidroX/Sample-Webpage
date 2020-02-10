@@ -169,6 +169,7 @@ h4 {
 /* START    --- Navigation */
 
 nav {
+    font-family: 'Maven Pro', sans-serif;
     position: fixed;
     z-index: 1;
     display: flex;
@@ -275,6 +276,7 @@ nav .triangle-finish {
 }
 
 #show-nav {
+    font-family: 'Maven Pro', sans-serif;
     position: fixed;
     z-index: 1;
     display: flex;
