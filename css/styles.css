@@ -234,7 +234,7 @@ nav .logo {
 .logo img {
     width: 100%;
     border-radius: 50%;
-    border: 1px solid silver;
+    border: 1px solid black;
 }
 
 .logo img:hover {
