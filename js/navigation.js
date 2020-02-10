@@ -31,5 +31,5 @@ setTimeout(() => {
         arrowMessage.style.opacity = "0";
         arrow.style.visibility = "hidden";
         arrowMessage.style.visibility = "hidden";
-    }, 6000);
+    }, 3500);
 }, 2000);
