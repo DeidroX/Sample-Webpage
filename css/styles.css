@@ -239,14 +239,15 @@ nav .logo {
     padding: 0.5rem 1rem;
 }
 
+/* #5FD400 farbe für progress-bar */
+
 .logo {
     z-index: 1;
 }
 
 .logo img {
     width: 100%;
-    border-radius: 50%;
-    border: 1px solid black;
+    
 }
 
 .logo img:hover {
