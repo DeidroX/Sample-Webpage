@@ -67,7 +67,7 @@ body {
 
 /* Navigation and text under pictures */
 figcaption, a {
-    font-size: var(--links-figcaption);
+    font-size: 1.1vw;
 }
 
 /* Normal textsize */
@@ -137,7 +137,6 @@ h4 {
 }
 
 .hero-image-text p {
-
     font-size: 1.3vw;
 }
 
@@ -222,7 +221,7 @@ nav .hide-nav-button {
 nav .hide-nav-button button {
     padding: 0;
     color: white;
-    font-size: var(--h3);
+    font-size: 2.5vw;
     margin: 0.5rem 1rem 0 0;
     background: 0;
     border: 0;
