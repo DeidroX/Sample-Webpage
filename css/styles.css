@@ -222,7 +222,7 @@ nav .hide-nav-button button {
     padding: 0;
     color: white;
     font-size: 2.5vw;
-    margin: 0.5rem 1rem 0 0;
+    margin: 1vh 1vw 0 0;
     background: 0;
     border: 0;
 }
@@ -235,7 +235,7 @@ nav .logo {
     background-image: linear-gradient(to right, black, silver);
     opacity: 97%;
     margin: 0;
-    padding: 0.5rem 1rem;
+    padding: 1vh 1vw;
 }
 
 /* #5FD400 farbe für progress-bar */
@@ -276,7 +276,7 @@ nav li:first-child {
 nav a {
     display: block;
     text-align: center;
-    padding: calc(0.6rem + 0.5vh) 0;
+    padding: 2vh 0;
     text-decoration: none;
     color: white;
 }
