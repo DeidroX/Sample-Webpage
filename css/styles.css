@@ -560,6 +560,13 @@ footer .social-media h3 {
     margin: 0 0 2rem 0;
 }
 
+footer .sm-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border: 1px solid green;
+}
+
 footer .sm-links a {
     color: #F1F1EF;
     font-size: 30px;
