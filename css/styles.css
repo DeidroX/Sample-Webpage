@@ -563,7 +563,7 @@ footer .social-media h3 {
 footer .sm-links {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     border: 1px solid green;
 }
 
